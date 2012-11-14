@@ -1,9 +1,21 @@
 #ifndef __WINDOW_H__
 #define __WINDOW_H__
 
-//#include <GL/gl.h>     // The GL Header File
-//#include <GL/glut.h>   // The GL Utility Toolkit (Glut) Header
+
+#ifdef _WIN32
+#include<Windows.h>
+#include <GL/glut.h>   // The GL Utility Toolkit (Glut) Header
+#endif 
+
+#ifdef __APPLE__
 #include <GLUT/glut.h>
+#endif
+
+#ifdef __linux__
+#include <GL/glut.h> 
+#endif
+
+
 #include <stdlib.h>
 
 static void draw(void);
