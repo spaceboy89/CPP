@@ -51,15 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7615EEE9165401D10093300E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				76CFCEBF1653DC9A0009A59E /* window.h */,
+				760C01A71653F9A100BEE32D /* Instruction.h */,
+				760C01A81653F9A100BEE32D /* ParseInput.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		76CFCEA51653DBF40009A59E = {
 			isa = PBXGroup;
 			children = (
 				76F5B5701653DD2300EDB01D /* GLUT.framework */,
 				76F5B5711653DD2300EDB01D /* OpenGL.framework */,
 				76CFCEBD1653DC9A0009A59E /* main.cpp */,
-				76CFCEBF1653DC9A0009A59E /* window.h */,
-				760C01A71653F9A100BEE32D /* Instruction.h */,
-				760C01A81653F9A100BEE32D /* ParseInput.h */,
+				7615EEE9165401D10093300E /* Headers */,
 				76CFCEB31653DBF40009A59E /* CPP */,
 				76CFCEB11653DBF40009A59E /* Products */,
 			);
