@@ -27,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		760C01A71653F9A100BEE32D /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Instruction.h; path = ../../../source/Instruction.h; sourceTree = "<group>"; };
+		760C01A81653F9A100BEE32D /* ParseInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseInput.h; path = ../../../source/ParseInput.h; sourceTree = "<group>"; };
 		76CFCEB01653DBF40009A59E /* CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CFCEB61653DBF40009A59E /* CPP.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CPP.1; sourceTree = "<group>"; };
 		76CFCEBD1653DC9A0009A59E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../source/main.cpp; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 				76F5B5711653DD2300EDB01D /* OpenGL.framework */,
 				76CFCEBD1653DC9A0009A59E /* main.cpp */,
 				76CFCEBF1653DC9A0009A59E /* window.h */,
+				760C01A71653F9A100BEE32D /* Instruction.h */,
+				760C01A81653F9A100BEE32D /* ParseInput.h */,
 				76CFCEB31653DBF40009A59E /* CPP */,
 				76CFCEB11653DBF40009A59E /* Products */,
 			);
