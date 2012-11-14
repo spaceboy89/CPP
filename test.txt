@@ -1,3 +1,7 @@
 This is from the JamesTest branch
 Oli commit
+<<<<<<< HEAD
 Oli In Master
+=======
+Oli in JamesTest
+>>>>>>> JamesTest
