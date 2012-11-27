@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761C63B516654FAE00F15E5C /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761C63B416654FAE00F15E5C /* shape.cpp */; };
 		76CFCEB71653DBF40009A59E /* CPP.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76CFCEB61653DBF40009A59E /* CPP.1 */; };
-		76CFCEC01653DC9A0009A59E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76CFCEBD1653DC9A0009A59E /* main.cpp */; };
 		76F5B5721653DD2300EDB01D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F5B5701653DD2300EDB01D /* GLUT.framework */; };
 		76F5B5731653DD2300EDB01D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F5B5711653DD2300EDB01D /* OpenGL.framework */; };
 /* End PBXBuildFile section */
@@ -29,9 +29,9 @@
 /* Begin PBXFileReference section */
 		760C01A71653F9A100BEE32D /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Instruction.h; path = ../../../source/Instruction.h; sourceTree = "<group>"; };
 		760C01A81653F9A100BEE32D /* ParseInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseInput.h; path = ../../../source/ParseInput.h; sourceTree = "<group>"; };
+		761C63B416654FAE00F15E5C /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shape.cpp; path = ../../../source/shape.cpp; sourceTree = "<group>"; };
 		76CFCEB01653DBF40009A59E /* CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CFCEB61653DBF40009A59E /* CPP.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CPP.1; sourceTree = "<group>"; };
-		76CFCEBD1653DC9A0009A59E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../source/main.cpp; sourceTree = "<group>"; };
 		76CFCEBE1653DC9A0009A59E /* makefile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = makefile.txt; path = ../../../../source/makefile.txt; sourceTree = "<group>"; };
 		76CFCEBF1653DC9A0009A59E /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = window.h; path = ../../../source/window.h; sourceTree = "<group>"; };
 		76F5B5701653DD2300EDB01D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -64,9 +64,9 @@
 		76CFCEA51653DBF40009A59E = {
 			isa = PBXGroup;
 			children = (
+				761C63B416654FAE00F15E5C /* shape.cpp */,
 				76F5B5701653DD2300EDB01D /* GLUT.framework */,
 				76F5B5711653DD2300EDB01D /* OpenGL.framework */,
-				76CFCEBD1653DC9A0009A59E /* main.cpp */,
 				7615EEE9165401D10093300E /* Headers */,
 				76CFCEB31653DBF40009A59E /* CPP */,
 				76CFCEB11653DBF40009A59E /* Products */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76CFCEC01653DC9A0009A59E /* main.cpp in Sources */,
+				761C63B516654FAE00F15E5C /* shape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
