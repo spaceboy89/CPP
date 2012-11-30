@@ -16,7 +16,7 @@ class Rotate: public Instruction
 {
 public:
 	Rotate(double s);
-    void draw();
+    void Draw();
 	~Rotate();
     
 private:

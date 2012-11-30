@@ -16,7 +16,7 @@ class Repeat: public Instruction
 {
 public:
 	Repeat();
-    void draw();
+    void Draw();
 	~Repeat();
     
 private:

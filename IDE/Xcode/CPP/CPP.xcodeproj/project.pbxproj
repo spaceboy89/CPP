@@ -10,10 +10,10 @@
 		761C63B516654FAE00F15E5C /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761C63B416654FAE00F15E5C /* shape.cpp */; };
 		76AB2D561669194D0020337B /* ParseInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D551669194D0020337B /* ParseInput.cpp */; };
 		76AB2D58166919C90020337B /* Instruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D57166919C90020337B /* Instruction.cpp */; };
-		76AB2D671669258C0020337B /* Forward.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D5F1669258C0020337B /* Forward.cpp */; };
-		76AB2D681669258C0020337B /* Jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D611669258C0020337B /* Jump.cpp */; };
-		76AB2D691669258C0020337B /* Repeat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D631669258C0020337B /* Repeat.cpp */; };
-		76AB2D6A1669258C0020337B /* Rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D651669258C0020337B /* Rotate.cpp */; };
+		76AB2D6B166935C90020337B /* Rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D651669258C0020337B /* Rotate.cpp */; };
+		76AB2D6C166935CC0020337B /* Jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D611669258C0020337B /* Jump.cpp */; };
+		76AB2D6D166935D00020337B /* Forward.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D5F1669258C0020337B /* Forward.cpp */; };
+		76AB2D6E166935D60020337B /* Repeat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D631669258C0020337B /* Repeat.cpp */; };
 		76CFCEB71653DBF40009A59E /* CPP.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76CFCEB61653DBF40009A59E /* CPP.1 */; };
 		76F5B5721653DD2300EDB01D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F5B5701653DD2300EDB01D /* GLUT.framework */; };
 		76F5B5731653DD2300EDB01D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F5B5711653DD2300EDB01D /* OpenGL.framework */; };
@@ -194,10 +194,10 @@
 				761C63B516654FAE00F15E5C /* shape.cpp in Sources */,
 				76AB2D561669194D0020337B /* ParseInput.cpp in Sources */,
 				76AB2D58166919C90020337B /* Instruction.cpp in Sources */,
-				76AB2D671669258C0020337B /* Forward.cpp in Sources */,
-				76AB2D681669258C0020337B /* Jump.cpp in Sources */,
-				76AB2D691669258C0020337B /* Repeat.cpp in Sources */,
-				76AB2D6A1669258C0020337B /* Rotate.cpp in Sources */,
+				76AB2D6B166935C90020337B /* Rotate.cpp in Sources */,
+				76AB2D6C166935CC0020337B /* Jump.cpp in Sources */,
+				76AB2D6D166935D00020337B /* Forward.cpp in Sources */,
+				76AB2D6E166935D60020337B /* Repeat.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,35 @@
 //
 
 #include "ParseInput.h"
+#include "Instruction.h"
+
+// Includes to be removed for final program???
+#include "Forward.h"
+#include "Jump.h"
+#include "Repeat.h"
+#include "Rotate.h"
+// end
 
 
 ParseInput::ParseInput()
 {
-    //Forward f(1);
+    Forward f(2);
+    Rotate r(90);
+    Jump j(1);
+    Rotate rot(-90);
+    Forward fwd(3);
+    
+    Instruction& i1(f);
+    Instruction& i2(r);
+    Instruction& i3(j);
+    Instruction& i4(rot);
+    Instruction& i5(fwd);
+    
+    CommandList.push_back(&i1);
+    CommandList.push_back(&i2);
+    CommandList.push_back(&i3);
+    CommandList.push_back(&i4);
+    CommandList.push_back(&i5);
 }
 
 ParseInput::~ParseInput()
@@ -19,7 +43,9 @@ ParseInput::~ParseInput()
     
 }
 
-void ParseInput::draw()
+void ParseInput::Draw()
 {
-    
+    for (std::vector<Instruction*>::iterator it=CommandList.begin(); it != CommandList.end(); ++it) {
+        (*it)->Draw();
+    }
 }

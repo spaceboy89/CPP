@@ -16,7 +16,7 @@ class Forward: public Instruction
 {
 public:
 	Forward(double s);
-    void draw();
+    void Draw();
 	~Forward();
     
 private:

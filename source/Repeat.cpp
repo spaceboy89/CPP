@@ -15,9 +15,9 @@ Repeat::Repeat()
     
 }
 
-void Repeat::draw()
+void Repeat::Draw()
 {
-    RepeatProgram.draw();
+    RepeatProgram.Draw();
 }
 
 Repeat::~Repeat()

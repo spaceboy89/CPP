@@ -17,7 +17,7 @@ ParseInput runProgram;
 
 void draw(void)
 {
-    runProgram.draw();
+    runProgram.Draw();
 }
 
 int main ( int argc, char** argv )   // Create Main Function For Bringing It All Together

@@ -20,10 +20,10 @@ class ParseInput
 public:
 	ParseInput();
 	~ParseInput();
-	void draw();
+	void Draw();
 
 private:
-    std::vector<Instruction> CommandList;
+    std::vector<Instruction*> CommandList;
     
 };
 

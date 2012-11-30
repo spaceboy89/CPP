@@ -20,7 +20,7 @@ Forward::Forward(double s)
     size = s;
 }
 
-void Forward::draw()
+void Forward::Draw()
 {
     // Start drawing a line
     glBegin(GL_LINE_STRIP);

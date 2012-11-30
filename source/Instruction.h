@@ -19,14 +19,13 @@ public:
     Instruction();
 	Instruction(double size);
 	~Instruction();
-	virtual void draw();
+	virtual void Draw() = 0;
 	float GetSize();
 
 protected:
 	double size;
 
 };
-
 
 #endif
 

@@ -16,7 +16,7 @@ class Jump: public Instruction
 {
 public:
 	Jump(double s);
-    void draw();
+    void Draw();
 	~Jump();
     
 private:

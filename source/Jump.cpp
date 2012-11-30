@@ -20,7 +20,7 @@ Jump::Jump(double s)
     size = s;
 }
 
-void Jump::draw()
+void Jump::Draw()
 {
     // Jump
     glTranslatef(0, size, 0);
