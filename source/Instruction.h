@@ -6,16 +6,17 @@
 //  Copyright (c) 2012 Oli Davis. All rights reserved.
 //
 
-#ifndef CPP_Repeat_h
-#define CPP_Repeat_h
+#ifndef CPP_Instruction_h
+#define CPP_Instruction_h
 
 #include <iostream>
+
 
 
 class Instruction
 {
 public:
-	Instruction();
+    Instruction();
 	Instruction(double size);
 	~Instruction();
 	virtual void draw();

@@ -94,8 +94,8 @@
 			children = (
 				76AB2D601669258C0020337B /* Forward.h */,
 				76AB2D621669258C0020337B /* Jump.h */,
-				76AB2D641669258C0020337B /* Repeat.h */,
 				76AB2D661669258C0020337B /* Rotate.h */,
+				76AB2D641669258C0020337B /* Repeat.h */,
 			);
 			name = "Instruction Interited";
 			sourceTree = "<group>";
@@ -105,8 +105,8 @@
 			children = (
 				76AB2D5F1669258C0020337B /* Forward.cpp */,
 				76AB2D611669258C0020337B /* Jump.cpp */,
-				76AB2D631669258C0020337B /* Repeat.cpp */,
 				76AB2D651669258C0020337B /* Rotate.cpp */,
+				76AB2D631669258C0020337B /* Repeat.cpp */,
 			);
 			name = "Instruction Inherited";
 			sourceTree = "<group>";

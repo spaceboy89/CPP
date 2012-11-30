@@ -11,6 +11,8 @@
 #include "window.h"
 #include "ParseInput.h"
 
+using namespace std;
+
 ParseInput runProgram;
 
 void draw(void)

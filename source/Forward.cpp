@@ -16,9 +16,8 @@ Forward::Forward()
 }
 
 Forward::Forward(double s)
-: size(s)
 {
-    
+    size = s;
 }
 
 void Forward::draw()

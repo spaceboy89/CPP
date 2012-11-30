@@ -9,7 +9,7 @@
 #ifndef CPP_Repeat_h
 #define CPP_Repeat_h
 
-#include "Instruction.h"
+#include "ParseInput.h"
 
 
 class Repeat: public Instruction
@@ -20,7 +20,7 @@ public:
 	~Repeat();
     
 private:
-    //ParseInput RepeatProgram;
+    ParseInput RepeatProgram;
     
 };
 

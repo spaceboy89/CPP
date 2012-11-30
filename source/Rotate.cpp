@@ -16,9 +16,8 @@ Rotate::Rotate()
 }
 
 Rotate::Rotate(double s)
-: size(s)
 {
-    
+    size = s;
 }
 
 void Rotate::draw()
