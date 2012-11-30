@@ -1,106 +1,32 @@
-#include<list>
+//
+//  Instruction.h
+//  CPP
+//
+//  Created by Oli Davis on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis. All rights reserved.
+//
 
+#ifndef CPP_Repeat_h
+#define CPP_Repeat_h
 
+#include <iostream>
 
-using namespace std;
 
 class Instruction
 {
 public:
-	
-	Instruction(float size);
+	Instruction();
+	Instruction(double size);
 	~Instruction();
-	virtual void Draw();
+	virtual void draw();
 	float GetSize();
 
-private:
-
-	float size;
-	Instruction();
+protected:
+	double size;
 
 };
 
-Instruction::Instruction()
-{
-}
 
-Instruction::~Instruction()
-{
-}
-
-class Jump: public Instruction
-{
-public:
-	Jump();
-	~Jump();
-
-private:
-
-};
-
-Jump::Jump()
-{
-}
-
-Jump::~Jump()
-{
-}
-
-class Rotate: public Instruction
-{
-public:
-	Rotate();
-	~Rotate();
-
-private:
-
-};
-
-Rotate::Rotate()
-{
-}
-
-Rotate::~Rotate()
-{
-}
-
-class Forward: public Instruction
-{
-public:
-	Forward();
-	~Forward();
-
-private:
-
-};
-
-Forward::Forward()
-{
-}
-
-Forward::~Forward()
-{
-}
+#endif
 
 
-
-class Repeat: public Instruction
-{
-public:
-	Repeat();
-	Repeat(List<Instruction> rl);
-	~Repeat();
-
-private:
-
-	List<Instruction> RepeatList;
-
-};
-
-Repeat::Repeat()
-{
-}
-
-Repeat::~Repeat()
-{
-}

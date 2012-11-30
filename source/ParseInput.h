@@ -1,30 +1,35 @@
+//
+//  ParseInput.h
+//  CPP
+//
+//  Created by Oli Davis on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis. All rights reserved.
+//
+
+#ifndef CPP_Repeat_h
+#define CPP_Repeat_h
+
+
+
 #include<iostream>
-#include<list>
+#include<vector>
 
-#include"Instruction.h"
+#include "Instruction.h"
 
-using namespace std;
 
 class ParseInput
 {
 public:
 	ParseInput();
 	~ParseInput();
-	void ExcecuteCommands();
+	void draw();
 	void PopulateCommandList();
 
 
 private:
 
-	list<Instruction> CommandList;
+	std::vector<Instruction> CommandList;
 
 };
 
-ParseInput::ParseInput()
-{
-
-}
-
-ParseInput::~ParseInput()
-{
-}
+#endif
