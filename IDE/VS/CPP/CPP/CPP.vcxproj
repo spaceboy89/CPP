@@ -76,11 +76,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\Forward.cpp" />
+    <ClCompile Include="..\..\..\..\source\Instruction.cpp" />
+    <ClCompile Include="..\..\..\..\source\Jump.cpp" />
+    <ClCompile Include="..\..\..\..\source\ParseInput.cpp" />
+    <ClCompile Include="..\..\..\..\source\Repeat.cpp" />
+    <ClCompile Include="..\..\..\..\source\Rotate.cpp" />
     <ClCompile Include="..\..\..\..\source\shape.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\Forward.h" />
     <ClInclude Include="..\..\..\..\source\Instruction.h" />
+    <ClInclude Include="..\..\..\..\source\Jump.h" />
     <ClInclude Include="..\..\..\..\source\ParseInput.h" />
+    <ClInclude Include="..\..\..\..\source\Repeat.h" />
+    <ClInclude Include="..\..\..\..\source\Rotate.h" />
     <ClInclude Include="..\..\..\..\source\window.h" />
   </ItemGroup>
   <ItemGroup>

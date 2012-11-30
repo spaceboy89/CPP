@@ -7,7 +7,18 @@
 //
 
 #include "Forward.h"
-#include "window.h"
+#ifdef _WIN32
+#include<Windows.h>
+#include <GL/glut.h>   // The GL Utility Toolkit (Glut) Header
+#endif 
+
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#endif
+
+#ifdef __linux__
+#include <GL/glut.h> 
+#endif
 
 
 Forward::Forward()
