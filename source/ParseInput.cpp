@@ -19,33 +19,39 @@
 
 ParseInput::ParseInput()
 {
-    Forward f(2);
-    Rotate r(90);
-    Jump j(1);
-    Rotate rot(-90);
-    Forward fwd(3);
+	Forward *p_f = new Forward(2);
+    Rotate *p_r = new Rotate(90);
+    Jump *p_j = new Jump(1);
+    Rotate *p_rot = new Rotate(-90);
+    Forward *p_fwd = new Forward(3);
     
-    Instruction& i1(f);
-    Instruction& i2(r);
-    Instruction& i3(j);
-    Instruction& i4(rot);
-    Instruction& i5(fwd);
+    Instruction *i1, *i2, *i3, *i4, *i5;
+
+	i1 = p_f;
+	i2 = p_r;
+	i3 = p_j;
+	i4 = p_rot;
+	i5 = p_fwd;
     
-    CommandList.push_back(&i1);
-    CommandList.push_back(&i2);
-    CommandList.push_back(&i3);
-    CommandList.push_back(&i4);
-    CommandList.push_back(&i5);
+    CommandList.push_back(p_f);
+    CommandList.push_back(p_r);
+    CommandList.push_back(p_j);
+    CommandList.push_back(p_rot);
+    CommandList.push_back(p_fwd);
+
+	{}
+
 }
 
 ParseInput::~ParseInput()
 {
-    
+    CommandList.clear();
 }
 
 void ParseInput::Draw()
 {
-    for (std::vector<Instruction*>::iterator it=CommandList.begin(); it != CommandList.end(); ++it) {
+  for (std::vector<Instruction*>::iterator it=CommandList.begin(); it != CommandList.end(); it++) {
         (*it)->Draw();
     }
+	
 }

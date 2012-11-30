@@ -23,7 +23,7 @@ public:
 	void Draw();
 
 private:
-    std::vector<Instruction*> CommandList;
+    std::vector<Instruction *> CommandList;
     
 };
 

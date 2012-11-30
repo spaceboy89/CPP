@@ -1,26 +1,19 @@
-﻿Build started 30/11/2012 22:16:07.
-     1>Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" on node 2 (Build target(s)).
+﻿Build started 30/11/2012 23:25:01.
+     1>Project "C:\Users\James\Desktop\bkup\IDE\VS\CPP\CPP\CPP.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\source\Forward.cpp ..\..\..\..\source\Instruction.cpp ..\..\..\..\source\Jump.cpp ..\..\..\..\source\ParseInput.cpp ..\..\..\..\source\Repeat.cpp ..\..\..\..\source\Rotate.cpp
-         Rotate.cpp
-         Repeat.cpp
+         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\source\ParseInput.cpp
          ParseInput.cpp
-         Jump.cpp
-         Instruction.cpp
-         Forward.cpp
-         Generating Code...
        Link:
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.lib" /MACHINE:X86 Debug\Forward.obj
+         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\James\Desktop\bkup\IDE\VS\CPP\Debug\CPP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\James\Desktop\bkup\IDE\VS\CPP\Debug\CPP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\James\Desktop\bkup\IDE\VS\CPP\Debug\CPP.lib" /MACHINE:X86 Debug\Forward.obj
          Debug\Instruction.obj
          Debug\Jump.obj
          Debug\ParseInput.obj
          Debug\Repeat.obj
          Debug\Rotate.obj
          Debug\shape.obj
-         LINK : D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.exe not found or not built by the last incremental link; performing full link
-         CPP.vcxproj -> D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.exe
-     1>Done Building Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" (Build target(s)).
+         CPP.vcxproj -> C:\Users\James\Desktop\bkup\IDE\VS\CPP\Debug\CPP.exe
+     1>Done Building Project "C:\Users\James\Desktop\bkup\IDE\VS\CPP\CPP\CPP.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.97
+Time Elapsed 00:00:00.97
