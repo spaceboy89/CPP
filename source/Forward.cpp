@@ -36,9 +36,9 @@ void Forward::Draw()
     // Start drawing a line
     glBegin(GL_LINE_STRIP);
         glVertex3f(0, 0, 0);
-        glVertex3f(0,size, 0);
+        glVertex3f(size,0, 0);
 	glEnd();
-    glTranslatef(0, size, 0);  // Move cursor to end of line
+    glTranslatef(size, 0, 0);  // Move cursor to end of line
     // End the drawing of a line
 }
 

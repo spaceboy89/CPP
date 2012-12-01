@@ -34,7 +34,7 @@ Jump::Jump(double s)
 void Jump::Draw()
 {
     // Jump
-    glTranslatef(0, size, 0);
+    glTranslatef(size,0, 0);
     // End Jump
 }
 

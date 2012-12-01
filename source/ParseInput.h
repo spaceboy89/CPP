@@ -11,20 +11,27 @@
 
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <string>
 
 #include "Instruction.h"
 
+using namespace std;
 
 class ParseInput
 {
 public:
 	ParseInput();
 	~ParseInput();
+	
 	void Draw();
+	 friend ifstream& operator>>(ifstream& is, ParseInput& pi);
+	 friend ostream& operator<<(ostream& is, const ParseInput& pi);
 
 private:
     std::vector<Instruction *> CommandList;
-    
+
+
 };
 
 #endif
