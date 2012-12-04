@@ -36,6 +36,9 @@
     <ClInclude Include="..\..\..\..\source\Rotate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\source\Exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\..\source\makefile.txt">
@@ -46,6 +49,7 @@
     <None Include="ClassDiagram2.cd">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\source\shape.cpp">

@@ -8,12 +8,13 @@
 
 #include <iostream>
 #include <fstream>
+#include <exception>
 
 using namespace std;
 
 #include "window.h"
 #include "ParseInput.h"
-
+#include "Exceptions.h"
 
 
 ParseInput runProgram;
@@ -44,11 +45,17 @@ int main ( int argc, char *argv[] )   // Create Main Function For Bringing It Al
 		//exit(1);
 	}
 
-
+	try 
+	{
 	fs >> runProgram;
+	}
+	catch (FormatException& e)
+	{
+		cerr << e.what() << endl;
+	}
+//	cin >> i;
 
 	fs.close();
     
     window w(argc,argv);
 }
-

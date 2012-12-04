@@ -26,12 +26,43 @@ Repeat::Repeat()
     
 }
 
+Repeat::Repeat(double sz)
+{
+    size = sz;
+}
+
 void Repeat::Draw()
 {
+	for (int i(0); i< size;i++)
+	{
     RepeatProgram.Draw();
+	}
 }
 
 Repeat::~Repeat()
 {
     
+}
+
+ifstream& operator>>(ifstream& is, Repeat& r)
+{
+	char c;
+	while (is.peek() != '[')
+	{
+	is.get(c);
+	}
+
+	is.get(c);
+	is.get(c);
+
+	//do 
+	//{
+	is >> r.RepeatProgram;
+
+	//	is >> r.s;
+	
+	//}while(is.peek() != ']');
+	
+	//is.get(c);
+	return is;
 }

@@ -9,14 +9,16 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <exception>
 
 
-// Includes to be removed for final program???
+#include "Exceptions.h"
+
 #include "Forward.h"
 #include "Jump.h"
 #include "Repeat.h"
 #include "Rotate.h"
-// end
+
 
 using namespace std;
 
@@ -64,12 +66,10 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 	string s;
 	double sz;
 
-	cerr << "help" << endl;
+	
 
 	while (!is.eof())
 	{
-	//while (is.peek() != ' ')
-//	{
 		is >> s >> sz >> ws;
 
 		if (s == "FORWARD")
@@ -96,22 +96,30 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 			Instruction *i4 = p_r;
 			pi.CommandList.push_back(i4);	
 		}
+		else if (s == "]")
+		{
+			char c;
+			is >> ws;
+		is.get(c);
+		is >> ws;
+		break;
+		}
+	
 		else if (s == "REPEAT")
 		{
-		//	Repeat *p_rp = new Repeat(2);
-		//	Instruction *i2 = p_rp;
-		//	pi.CommandList.push_back(p_rp);	
+		Repeat *p_rp = new Repeat(sz);
+		is >> *p_rp;
+		Instruction *i2 = p_rp;
+		pi.CommandList.push_back(p_rp);	
+		return is;
 		}
 		else
 		{
-			cerr << "Input file not in correct format" << endl;
-			exit(1);
+			throw FormatException(s);
 		}
 
 		is >> ws;
 
-
-	//}
 	}
 
 
@@ -120,8 +128,7 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 
 ostream& operator<<(ostream& os, const ParseInput& pi)
 {
-
-	//cout << pi.s;
-
 	return os;
 }
+
+

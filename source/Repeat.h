@@ -17,7 +17,10 @@ class Repeat: public Instruction
 public:
 	Repeat();
     void Draw();
+	Repeat(double sz);
 	~Repeat();
+	friend ifstream& operator>>(ifstream& is, Repeat& r);
+	string s;
     
 private:
     ParseInput RepeatProgram;

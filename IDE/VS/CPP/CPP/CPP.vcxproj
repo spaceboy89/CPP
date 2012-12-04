@@ -85,6 +85,7 @@
     <ClCompile Include="..\..\..\..\source\shape.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\Exceptions.h" />
     <ClInclude Include="..\..\..\..\source\Forward.h" />
     <ClInclude Include="..\..\..\..\source\Instruction.h" />
     <ClInclude Include="..\..\..\..\source\Jump.h" />
@@ -97,6 +98,7 @@
     <Text Include="..\..\..\..\source\makefile.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

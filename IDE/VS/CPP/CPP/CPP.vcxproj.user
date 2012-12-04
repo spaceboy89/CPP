@@ -6,6 +6,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>test1.txt</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>D:\test1.txt</LocalDebuggerCommandArguments>
   </PropertyGroup>
 </Project>
