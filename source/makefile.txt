@@ -1,7 +1,7 @@
 
 
 CC=g++
-CFLAGS=-lGL -lglut -lGLU -lm
+CFLAGS=-L/usr/lib/x86_64-linux-gnu/ -lGL -lglut -lGLU -lm
 
 shape: shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o window.h
 	$(CC) $(CFLAGS) shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o -o shape
