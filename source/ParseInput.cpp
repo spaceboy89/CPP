@@ -110,7 +110,7 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 		Repeat *p_rp = new Repeat(sz);
 		is >> *p_rp;
 		Instruction *i2 = p_rp;
-		pi.CommandList.push_back(p_rp);	
+		pi.CommandList.push_back(i2);
 		return is;
 		}
 		else

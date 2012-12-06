@@ -13,7 +13,6 @@
 #include <vector>
 #include <fstream>
 #include <string>
-#include <exception>
 
 #include "Instruction.h"
 

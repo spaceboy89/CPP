@@ -11,7 +11,7 @@ public:
          // FormatException(const string m="Format of input file is incorrect"):msg(m){}
 		  FormatException(string m):msg("ERROR: Unrecognised instruction " + m){}
 		  FormatException(int i);
-		  ~FormatException(void){};
+		  ~FormatException() throw(){};
           const char* what(){return msg.c_str();}
 private:
            string msg;
