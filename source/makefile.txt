@@ -3,7 +3,7 @@
 CC=g++
 CFLAGS=-lGL -lglut -lGLU -lm
 
-shape: shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o
+shape: shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o window.h
 	$(CC) $(CFLAGS) shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o -o shape
     
 shape.o: shape.cpp ParseInput.h window.h Exceptions.h
