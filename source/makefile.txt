@@ -1,22 +1,19 @@
-# simple C++ makefile
+
 
 CC=g++
+CFLAGS=-lGL -lglut -lGLU   -lm
+LDFLAGS=
+SOURCES=ParseInput.cpp Instruction.cpp shape.cpp  Forward.cpp Jump.cpp Repeat.cpp Rotate.cpp    
+OBJECTS=$(SOURCES:.cpp=.o)
+EXECUTABLE=shape
 
-GLLIB=-lGL -lglut -lGLU   -lm
+all: $(SOURCES) $(EXECUTABLE)
+	
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-PROGNAME=shape
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
 
-PROG=$(PROGNAME)
-OBJ=$(PROGNAME).o
-SRC=$(PROGNAME).cpp
-
-$(PROG): $(OBJ)
-	 $(CC) $(OBJ) $(GLLIB) -o $(PROG)
-
-$(OBJ): $(SRC)
-	 $(CC) -c $(SRC)
-
-clean: 
-	/bin/rm -rf $(OBJ) $(PROG)
-
-
+clean:
+	rm -rf *o shape
