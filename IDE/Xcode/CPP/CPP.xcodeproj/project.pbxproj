@@ -52,6 +52,7 @@
 		76CFCEBF1653DC9A0009A59E /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = window.h; path = ../../../source/window.h; sourceTree = "<group>"; };
 		76F5B5701653DD2300EDB01D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		76F5B5711653DD2300EDB01D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		76FF90CB1671461100009A2A /* Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exceptions.h; path = ../../../source/Exceptions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 			children = (
 				760C01A81653F9A100BEE32D /* ParseInput.h */,
 				760C01A71653F9A100BEE32D /* Instruction.h */,
+				76FF90CB1671461100009A2A /* Exceptions.h */,
 				76AB2D5C1669201E0020337B /* Instruction Interited */,
 				76CFCEBF1653DC9A0009A59E /* window.h */,
 			);

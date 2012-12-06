@@ -2,18 +2,30 @@
 
 CC=g++
 CFLAGS=-lGL -lglut -lGLU   -lm
-LDFLAGS=
-SOURCES=ParseInput.cpp Instruction.cpp shape.cpp  Forward.cpp Jump.cpp Repeat.cpp Rotate.cpp    
-OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=shape
 
-all: $(SOURCES) $(EXECUTABLE)
-	
-$(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+shape: shape.o ParseInput.o Instruciton.o Forward.o Jump.o Rotate.o Repeat.o
+    $(CC) $(CFLAGS) Forward.o Jump.o Rotate.o Repeat.o -o shape
+    
+shape.o: shape.cpp ParseInput.h window.h Exceptions.h
+    $(CC) $(CFLAGS) -c shape.cpp
 
-.cpp.o:
-	$(CC) $(CFLAGS) $< -o $@
+ParseInput.o: ParseInput.cpp Instruction.h Forward.h Jump.h Rotate.h Repeat.h
+    $(CC) $(CFLAGS) -c ParseInput.cpp
+
+Instruction.o: Instruction.cpp Instruction.h
+    $(CC) $(CFLAGS) -c Instruction.cpp
+
+Forward.o: Forward.cpp Forward.h Instruction.h
+    $(CC) $(CFLAGS) -c Forward.cpp
+
+Jump.o: Jump.cpp Jump.h Instruction.h
+    $(CC) $(CFLAGS) -c Jump.cpp
+    
+Rotate.o: Rotate.cpp Rotate.h Instruction.h
+    $(CC) $(CFLAGS) -c Rotate.cpp
+    
+Repeat.o: Repeat.cpp Repeat.h ParseInput.h
+    $(CC) $(CFLAGS) -c Repeat.cpp
 
 clean:
 	rm -rf *o shape
