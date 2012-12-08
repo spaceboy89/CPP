@@ -28,7 +28,7 @@ Jump::Jump()
 
 Jump::Jump(double s)
 {
-    size = s;
+   size = s;
 }
 
 void Jump::Draw()

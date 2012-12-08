@@ -36,7 +36,7 @@ window::window(int argc, char** argv)
 	glutInit( &argc, argv );
 	glutInitWindowSize  ( 500, 500 );
 	glutInitDisplayMode ( GLUT_RGB | GLUT_DOUBLE );
-	glutCreateWindow    ( "ODD assignment" );
+	glutCreateWindow    ( "OOD assignment" );
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LEQUAL);
 	glShadeModel(GL_SMOOTH);
