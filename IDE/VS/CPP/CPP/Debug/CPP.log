@@ -1,4 +1,4 @@
-﻿Build started 08/12/2012 10:45:14.
+﻿Build started 08/12/2012 11:21:21.
      1>Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\source\ParseInput.cpp
@@ -17,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.72
+Time Elapsed 00:00:01.00
