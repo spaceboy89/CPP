@@ -53,7 +53,7 @@ ifstream& operator>>(ifstream& is, Repeat& r)
 	}
 
 	is.get(c);
-	is.get(c);
+//	is.get(c);
 
 	//do 
 	//{
