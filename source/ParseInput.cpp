@@ -24,20 +24,20 @@ using namespace std;
 
 ParseInput::ParseInput()
 {
-
+	brackets = true;
 }
 
 ParseInput::~ParseInput()
 {
-    CommandList.clear();
+	CommandList.clear();
 }
 
 void ParseInput::Draw()
 {
-  for (std::vector<Instruction*>::iterator it=CommandList.begin(); it != CommandList.end(); it++) {
-        (*it)->Draw();
-    }
-	
+	for (std::vector<Instruction*>::iterator it=CommandList.begin(); it != CommandList.end(); it++) {
+		(*it)->Draw();
+	}
+
 }
 
 ifstream& operator>>(ifstream& is, ParseInput& pi)
@@ -50,51 +50,92 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 	while (!is.eof())
 	{
 		is >> s;
-		{}
+
+
+
 		if (s == "FORWARD")
 		{
-			is >> sz;
-			Forward *p_f = new Forward(sz);
-			 Instruction *i1 = p_f;
-			pi.CommandList.push_back(i1);
+
+			if (is >> sz)
+			{
+				Forward *p_f = new Forward(sz);
+				Instruction *i1 = p_f;
+				pi.CommandList.push_back(i1);			
+			}
+			else
+			{
+				throw FormatException();
+			}
+
+
+
 		}
 		else if (s == "JUMP")
 		{
-				is >> sz;
-			Jump *p_j = new Jump(sz);
-			Instruction *i2 = p_j;
-			pi.CommandList.push_back(i2);	
+			if (is >> sz)
+			{
+
+				Jump *p_j = new Jump(sz);
+				Instruction *i2 = p_j;
+				pi.CommandList.push_back(i2);	
+			}
+			else
+			{
+				throw FormatException();
+			}
 		}
 		else if (s == "LEFT")
 		{
-				is >> sz;
-			Rotate *p_l = new Rotate(sz);
-			Instruction *i3 = p_l;
-			pi.CommandList.push_back(i3);	
+			if (is >> sz)
+			{
+
+				Rotate *p_l = new Rotate(sz);
+				Instruction *i3 = p_l;
+				pi.CommandList.push_back(i3);
+			}
+			else
+			{
+				throw FormatException();
+			}
 		}
 		else if (s == "RIGHT")
 		{
-				is >> sz;
-			Rotate *p_r = new Rotate(-sz);
-			Instruction *i4 = p_r;
-			pi.CommandList.push_back(i4);	
+			if (is >> sz)
+			{
+				Rotate *p_r = new Rotate(-sz);
+				Instruction *i4 = p_r;
+				pi.CommandList.push_back(i4);
+			}
+			else
+			{
+				throw FormatException();
+			}
 		}
 		else if (s == "]")
 		{
-			char c;
+
+			pi.brackets = true;
 			is >> ws;
 
-		return is;
+			return is;
 		}
-	
+
 		else if (s == "REPEAT")
 		{
-		is >> sz;
-		Repeat *p_rp = new Repeat(sz);
-		is >> *p_rp;
-		Instruction *i2 = p_rp;
-		pi.CommandList.push_back(i2);
-		
+
+			if (is >> sz)
+			{
+				Repeat *p_rp = new Repeat(sz);
+				(*p_rp).SetBrackets();
+				is >> *p_rp;
+				Instruction *i2 = p_rp;
+				pi.CommandList.push_back(i2);
+			}
+			else
+			{
+				throw FormatException();
+			}
+
 		}
 		else
 		{
@@ -105,6 +146,10 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 
 	}
 
+	if (pi.brackets == false)
+	{
+		throw BracketsError2();
+	}
 
 	return is;
 }

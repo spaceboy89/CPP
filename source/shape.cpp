@@ -17,45 +17,56 @@ using namespace std;
 #include "Exceptions.h"
 
 
+
 ParseInput runProgram;
+int no_brackets;
 
 void draw(void)
 {
-    runProgram.Draw();
+	runProgram.Draw();
 }
 
 int main ( int argc, char *argv[] )   // Create Main Function For Bringing It All Together
 {
 	ifstream fs;
 	char i[100];
-	
+
+
 	if (argc != 2)
 	{
-		cerr << "This program requires 1 argument only" << endl;
+		cerr << "Correct Usage: shape <filename>" << endl << "Press any key to exit...." << endl;
 		cin >> i;
-		//exit(1);
+		exit(1);
 	}
-	
+
 	fs.open(argv[1]);
 
 	if (!fs.is_open())
 	{
-		cerr << "File Not Found!" << endl;
+		cerr << "File Not Found!" << endl << "Press any key to exit...." << endl;
 		cin >> i;
-		//exit(1);
+		exit(1);
 	}
 
 	try 
 	{
-	fs >> runProgram;
+		fs >> runProgram;
 	}
 	catch (FormatException& e)
 	{
 		cerr << e.what() << endl;
 	}
-//	cin >> i;
+	catch (BracketsError2& e)
+	{
+		cerr << e.what() << endl;
+	}
+	catch (BracketsError& e)
+	{
+		cerr << e.what() << endl ;
+	}
+
 
 	fs.close();
-    
-    window w(argc,argv);
+
+	window w(argc,argv);
 }

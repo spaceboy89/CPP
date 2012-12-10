@@ -20,11 +20,17 @@ public:
 	Repeat(double sz);
 	~Repeat();
 	friend ifstream& operator>>(ifstream& is, Repeat& r);
-	string s;
+	//string s;
+	void SetBrackets();
     
 private:
     ParseInput RepeatProgram;
-    
+   
 };
+
+inline void Repeat::SetBrackets()
+{
+	RepeatProgram.SetBrackets(false);
+}
 
 #endif

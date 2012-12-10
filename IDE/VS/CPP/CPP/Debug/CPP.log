@@ -1,33 +1,18 @@
-﻿Build started 08/12/2012 11:54:59.
-     1>Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 10/12/2012 18:50:58.
+     1>Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\Forward.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\Forward.cpp
-         Forward.cpp
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\Instruction.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\Instruction.cpp
-         Instruction.cpp
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\Jump.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\Jump.cpp
-         Jump.cpp
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\ParseInput.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\ParseInput.cpp
-         ParseInput.cpp
-     1>d:\gitrepos\cpp\source\parseinput.cpp(84): warning C4101: 'c' : unreferenced local variable
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\Repeat.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\Repeat.cpp
-         Repeat.cpp
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\Rotate.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\Rotate.cpp
-         Rotate.cpp
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\shape.cpp.nativecodeanalysis.xml" /analyze:pluginlocalespc.dll /errorReport:prompt   /analyze:quiet ..\..\..\..\source\shape.cpp
+         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\source\Forward.cpp ..\..\..\..\source\Instruction.cpp ..\..\..\..\source\Jump.cpp ..\..\..\..\source\ParseInput.cpp ..\..\..\..\source\Repeat.cpp ..\..\..\..\source\Rotate.cpp ..\..\..\..\source\shape.cpp
          shape.cpp
-       Link:
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.lib" /MACHINE:X86 Debug\Forward.obj
-         Debug\Instruction.obj
-         Debug\Jump.obj
-         Debug\ParseInput.obj
-         Debug\Repeat.obj
-         Debug\Rotate.obj
-         Debug\shape.obj
-         CPP.vcxproj -> D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.exe
-     1>glut.h(146): warning : C28251: Inconsistent annotation for 'exit': this instance has no annotations. See d:\programs\microsoft visual studio 11.0\vc\include\stdlib.h(360). 
-     1>Done Building Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" (Rebuild target(s)).
+     1>d:\gitrepos\cpp\source\shape.cpp(18): fatal error C1083: Cannot open include file: 'vld.h': No such file or directory
+         Rotate.cpp
+         Repeat.cpp
+         ParseInput.cpp
+         Jump.cpp
+         Instruction.cpp
+         Forward.cpp
+         Generating Code...
+     1>Done Building Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:42.90
+Time Elapsed 00:00:04.67

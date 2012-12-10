@@ -23,15 +23,15 @@ class ParseInput
 public:
 	ParseInput();
 	~ParseInput();
-	
+
 	void Draw();
-	 friend ifstream& operator>>(ifstream& is, ParseInput& pi);
-	 friend ostream& operator<<(ostream& is, const ParseInput& pi);
+	void SetBrackets(bool b){brackets = b;}
+	friend ifstream& operator>>(ifstream& is, ParseInput& pi);
+	friend ostream& operator<<(ostream& is, const ParseInput& pi);
 
 private:
-    std::vector<Instruction *> CommandList;
-
-
+	std::vector<Instruction *> CommandList;
+	bool brackets;
 };
 
 

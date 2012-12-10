@@ -7,6 +7,7 @@
 //
 
 #include "Repeat.h"
+#include "Exceptions.h"
 #ifdef _WIN32
 #include<Windows.h>
 #include <GL/glut.h>   // The GL Utility Toolkit (Glut) Header
@@ -23,46 +24,45 @@
 
 Repeat::Repeat()
 {
-    
+
 }
 
 Repeat::Repeat(double sz)
 {
-    size = sz;
+	size = sz;
 }
 
 void Repeat::Draw()
 {
 	for (int i(0); i< size;i++)
 	{
-    RepeatProgram.Draw();
+		RepeatProgram.Draw();
 	}
 }
 
 Repeat::~Repeat()
 {
-    
+
 }
 
 ifstream& operator>>(ifstream& is, Repeat& r)
 {
 	char c;
-	while (is.peek() != '[')
+
+	is >> ws;
+
+	if (is.peek() == '[' )
 	{
-	is.get(c);
+		is.get(c);	
+	}
+	else
+	{
+		throw BracketsError();
+		{}
 	}
 
-	is.get(c);
-//	is.get(c);
-
-	//do 
-	//{
 	is >> r.RepeatProgram;
 
-	//	is >> r.s;
-	
-	//}while(is.peek() != ']');
-	
-	//is.get(c);
+
 	return is;
 }
