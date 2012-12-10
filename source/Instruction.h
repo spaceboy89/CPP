@@ -16,9 +16,9 @@
 class Instruction
 {
 public:
-    Instruction();
+    Instruction(){}
 	Instruction(double size);
-	~Instruction();
+	~Instruction(){}
 	virtual void Draw() = 0;
 	float GetSize();
 

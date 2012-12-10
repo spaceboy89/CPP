@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7618C85E1676671C009506E2 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 7618C85D1676671C009506E2 /* Makefile */; };
 		761C63B516654FAE00F15E5C /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761C63B416654FAE00F15E5C /* shape.cpp */; };
 		76AB2D561669194D0020337B /* ParseInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D551669194D0020337B /* ParseInput.cpp */; };
-		76AB2D58166919C90020337B /* Instruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D57166919C90020337B /* Instruction.cpp */; };
 		76AB2D6B166935C90020337B /* Rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D651669258C0020337B /* Rotate.cpp */; };
 		76AB2D6C166935CC0020337B /* Jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D611669258C0020337B /* Jump.cpp */; };
 		76AB2D6D166935D00020337B /* Forward.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AB2D5F1669258C0020337B /* Forward.cpp */; };
@@ -35,9 +35,10 @@
 /* Begin PBXFileReference section */
 		760C01A71653F9A100BEE32D /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Instruction.h; path = ../../../source/Instruction.h; sourceTree = "<group>"; };
 		760C01A81653F9A100BEE32D /* ParseInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseInput.h; path = ../../../source/ParseInput.h; sourceTree = "<group>"; };
+		7618C85C1676671C009506E2 /* Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exceptions.h; path = ../../../source/Exceptions.h; sourceTree = "<group>"; };
+		7618C85D1676671C009506E2 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = ../../../../source/Makefile; sourceTree = "<group>"; };
 		761C63B416654FAE00F15E5C /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shape.cpp; path = ../../../source/shape.cpp; sourceTree = "<group>"; };
 		76AB2D551669194D0020337B /* ParseInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParseInput.cpp; path = ../../../source/ParseInput.cpp; sourceTree = "<group>"; };
-		76AB2D57166919C90020337B /* Instruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Instruction.cpp; path = ../../../source/Instruction.cpp; sourceTree = "<group>"; };
 		76AB2D5F1669258C0020337B /* Forward.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Forward.cpp; path = ../../../source/Forward.cpp; sourceTree = "<group>"; };
 		76AB2D601669258C0020337B /* Forward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Forward.h; path = ../../../source/Forward.h; sourceTree = "<group>"; };
 		76AB2D611669258C0020337B /* Jump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Jump.cpp; path = ../../../source/Jump.cpp; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		76AB2D661669258C0020337B /* Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rotate.h; path = ../../../source/Rotate.h; sourceTree = "<group>"; };
 		76CFCEB01653DBF40009A59E /* CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CFCEB61653DBF40009A59E /* CPP.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CPP.1; sourceTree = "<group>"; };
-		76CFCEBE1653DC9A0009A59E /* makefile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = makefile.txt; path = ../../../../source/makefile.txt; sourceTree = "<group>"; };
 		76CFCEBF1653DC9A0009A59E /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = window.h; path = ../../../source/window.h; sourceTree = "<group>"; };
 		76F5B5701653DD2300EDB01D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		76F5B5711653DD2300EDB01D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -70,6 +70,7 @@
 		7615EEE9165401D10093300E /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				7618C85C1676671C009506E2 /* Exceptions.h */,
 				760C01A81653F9A100BEE32D /* ParseInput.h */,
 				760C01A71653F9A100BEE32D /* Instruction.h */,
 				76AB2D5C1669201E0020337B /* Instruction Interited */,
@@ -83,7 +84,6 @@
 			children = (
 				761C63B416654FAE00F15E5C /* shape.cpp */,
 				76AB2D551669194D0020337B /* ParseInput.cpp */,
-				76AB2D57166919C90020337B /* Instruction.cpp */,
 				76AB2D5E166921A00020337B /* Instruction Inherited */,
 			);
 			name = Source;
@@ -134,7 +134,7 @@
 		76CFCEB31653DBF40009A59E /* CPP */ = {
 			isa = PBXGroup;
 			children = (
-				76CFCEBE1653DC9A0009A59E /* makefile.txt */,
+				7618C85D1676671C009506E2 /* Makefile */,
 				76CFCEB61653DBF40009A59E /* CPP.1 */,
 			);
 			path = CPP;
@@ -193,11 +193,11 @@
 			files = (
 				761C63B516654FAE00F15E5C /* shape.cpp in Sources */,
 				76AB2D561669194D0020337B /* ParseInput.cpp in Sources */,
-				76AB2D58166919C90020337B /* Instruction.cpp in Sources */,
 				76AB2D6B166935C90020337B /* Rotate.cpp in Sources */,
 				76AB2D6C166935CC0020337B /* Jump.cpp in Sources */,
 				76AB2D6D166935D00020337B /* Forward.cpp in Sources */,
 				76AB2D6E166935D60020337B /* Repeat.cpp in Sources */,
+				7618C85E1676671C009506E2 /* Makefile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

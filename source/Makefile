@@ -4,17 +4,14 @@
 CC=g++
 CFLAGS=-lGL -lglut -lGLU -lm
 
-shape: Exceptions.h shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o window.h 
-	$(CC) $(CFLAGS) shape.o ParseInput.o Instruction.o Forward.o Jump.o Rotate.o Repeat.o -o shape
+shape: Exceptions.h shape.o ParseInput.o Instruction.h Forward.o Jump.o Rotate.o Repeat.o window.h
+	$(CC) $(CFLAGS) shape.o ParseInput.o Forward.o Jump.o Rotate.o Repeat.o -o shape
     
 shape.o: Exceptions.h shape.cpp ParseInput.h window.h 
 	$(CC) $(CFLAGS) -c shape.cpp
 
 ParseInput.o: ParseInput.cpp Exceptions.h Instruction.h Forward.h Jump.h Rotate.h Repeat.h
 	$(CC) -c ParseInput.cpp
-
-Instruction.o: Instruction.cpp Instruction.h
-	$(CC) -c Instruction.cpp
 
 Forward.o: Forward.cpp Forward.h Instruction.h
 	$(CC) -c Forward.cpp
