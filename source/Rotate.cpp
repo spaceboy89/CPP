@@ -21,11 +21,6 @@
 #endif
 
 
-Rotate::Rotate()
-{
-    
-}
-
 Rotate::Rotate(double s)
 {
     size = s;
@@ -36,9 +31,4 @@ void Rotate::Draw()
     // rotate cursor 90 degrees clockwise
     glRotatef(size, 0, 0, 1);
 	// end rotate
-}
-
-Rotate::~Rotate()
-{
-    
 }

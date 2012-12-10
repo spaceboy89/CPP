@@ -17,10 +17,10 @@ class Jump: public Instruction
 public:
 	Jump(double s);
     void Draw();
-	~Jump();
+	~Jump(){}
     
 private:
-    Jump();
+    Jump(){}
 };
 
 #endif

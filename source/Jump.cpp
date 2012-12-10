@@ -21,11 +21,6 @@
 #endif
 
 
-Jump::Jump()
-{
-    
-}
-
 Jump::Jump(double s)
 {
    size = s;
@@ -36,9 +31,4 @@ void Jump::Draw()
     // Jump
     glTranslatef(size,0, 0);
     // End Jump
-}
-
-Jump::~Jump()
-{
-    
 }

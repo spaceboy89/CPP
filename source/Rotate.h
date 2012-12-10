@@ -17,10 +17,10 @@ class Rotate: public Instruction
 public:
 	Rotate(double s);
     void Draw();
-	~Rotate();
+	~Rotate(){}
     
 private:
-    Rotate();
+    Rotate(){}
 };
 
 #endif

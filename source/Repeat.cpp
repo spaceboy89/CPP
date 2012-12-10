@@ -22,11 +22,6 @@
 #endif
 
 
-Repeat::Repeat()
-{
-
-}
-
 Repeat::Repeat(double sz)
 {
 	size = sz;
@@ -38,11 +33,6 @@ void Repeat::Draw()
 	{
 		RepeatProgram.Draw();
 	}
-}
-
-Repeat::~Repeat()
-{
-
 }
 
 ifstream& operator>>(ifstream& is, Repeat& r)

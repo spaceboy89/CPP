@@ -17,10 +17,10 @@ class Forward: public Instruction
 public:
 	Forward(double s);
     void Draw();
-	~Forward();
+	~Forward(){}
     
 private:
-    Forward();
+    Forward() {}
 };
 
 #endif

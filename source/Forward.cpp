@@ -21,10 +21,6 @@
 #endif
 
 
-Forward::Forward()
-{
-    
-}
 
 Forward::Forward(double s)
 {
@@ -40,9 +36,4 @@ void Forward::Draw()
 	glEnd();
     glTranslatef(size, 0, 0);  // Move cursor to end of line
     // End the drawing of a line
-}
-
-Forward::~Forward()
-{
-    
 }

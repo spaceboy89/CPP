@@ -15,10 +15,10 @@
 class Repeat: public Instruction
 {
 public:
-	Repeat();
+	Repeat(){}
     void Draw();
 	Repeat(double sz);
-	~Repeat();
+	~Repeat(){}
 	friend ifstream& operator>>(ifstream& is, Repeat& r);
 	//string s;
 	void SetBrackets();
