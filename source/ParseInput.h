@@ -2,8 +2,8 @@
 //  ParseInput.h
 //  CPP
 //
-//  Created by Oli Davis on 30/11/2012.
-//  Copyright (c) 2012 Oli Davis. All rights reserved.
+//  Created by Oli Davis, James Sinclair and Craig Lord  on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis, James Sinclair and Craig Lord. All rights reserved.
 //
 
 #ifndef CPP_ParseInput_h
@@ -18,20 +18,21 @@
 
 using namespace std;
 
+// This class reads in the input program from the command line
 class ParseInput
 {
 public:
-	ParseInput();
-	~ParseInput();
+	ParseInput(); // Constructor
+	~ParseInput(); // Destructor
 
-	void Draw();
-	void SetBrackets(bool b){brackets = b;}
-	friend ifstream& operator>>(ifstream& is, ParseInput& pi);
-	friend ostream& operator<<(ostream& is, const ParseInput& pi);
+	void Draw(); // Virtual Draw function
+	void SetBrackets(bool b){brackets = b;} // Allows write access to brackets member variable
+	friend ifstream& operator>>(ifstream& is, ParseInput& pi); // Reads the input program
+	friend ostream& operator<<(ostream& is, const ParseInput& pi); // Used for testing the input operator
 
 private:
-	std::vector<Instruction *> CommandList;
-	bool brackets;
+	std::vector<Instruction *> CommandList; // Vector type allows dynamic growth of the command list
+	bool brackets; // Flag to indicate if enclosing brackets are balanced.
 };
 
 

@@ -1,3 +1,10 @@
+//
+//  Exceptions.h
+//  CPP
+//
+//  Created by Oli Davis, James Sinclair and Craig Lord  on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis, James Sinclair and Craig Lord. All rights reserved.
+//
 
 #include <string>
 #include <exception>
@@ -6,6 +13,7 @@
 
 using namespace std;
 
+// Exception for catching incorrect sizes or commands such as 'FORWRAD 1' or 'FORWARD a'
 class FormatException:public exception{
 public:
       	  FormatException(string m):msg("ERROR: Unrecognised instruction " + m){}
@@ -16,7 +24,7 @@ private:
            string msg;
 };
 
-
+// Exception for a repeat loop that isn't ended (missing ']' character)
 class BracketsError2:public exception{
 public:
           BracketsError2():msg("ERROR: Unterminated Repeat Loop (missing ])"){}		
@@ -26,6 +34,7 @@ private:
            string msg;
 };
 
+// Exception for a repeat loop that isn't started (missing '[' character)
 class BracketsError:public exception{
 public:
           BracketsError():msg("ERROR: Repeat Loop not started (missing [)"){}		

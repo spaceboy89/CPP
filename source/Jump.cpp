@@ -2,8 +2,8 @@
 //  Jump.cpp
 //  CPP
 //
-//  Created by Oli Davis on 30/11/2012.
-//  Copyright (c) 2012 Oli Davis. All rights reserved.
+//  Created by Oli Davis, James Sinclair and Craig Lord  on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis, James Sinclair and Craig Lord. All rights reserved.
 //
 
 #include "Jump.h"
@@ -20,15 +20,16 @@
 #include <GL/glut.h> 
 #endif
 
-
+// Constructor
 Jump::Jump(double s)
 {
-   size = s;
+	//size is a member variable of the instruction base class  
+	size = s;
 }
 
 void Jump::Draw()
 {
     // Jump
-    glTranslatef(size,0, 0);
+    glTranslatef(size, 0, 0);
     // End Jump
 }

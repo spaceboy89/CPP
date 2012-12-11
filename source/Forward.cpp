@@ -2,8 +2,8 @@
 //  Forward.cpp
 //  CPP
 //
-//  Created by Oli Davis on 30/11/2012.
-//  Copyright (c) 2012 Oli Davis. All rights reserved.
+//  Created by Oli Davis, James Sinclair and Craig Lord  on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis, James Sinclair and Craig Lord. All rights reserved.
 //
 
 #include "Forward.h"
@@ -21,9 +21,10 @@
 #endif
 
 
-
+// Constructor
 Forward::Forward(double s)
 {
+	//size is a member variable of the instruction base class
     size = s;
 }
 

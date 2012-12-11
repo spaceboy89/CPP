@@ -2,8 +2,8 @@
 //  Rotate.h
 //  CPP
 //
-//  Created by Oli Davis on 30/11/2012.
-//  Copyright (c) 2012 Oli Davis. All rights reserved.
+//  Created by Oli Davis, James Sinclair and Craig Lord  on 30/11/2012.
+//  Copyright (c) 2012 Oli Davis, James Sinclair and Craig Lord. All rights reserved.
 //
 
 #ifndef CPP_Rotate_h
@@ -11,16 +11,16 @@
 
 #include "Instruction.h"
 
-
+// Inherits publically from Instruction
 class Rotate: public Instruction
 {
 public:
-	Rotate(double s);
-    void Draw();
-	~Rotate(){}
+	Rotate(double s); // Constructor
+    void Draw(); // Virtual Draw function
+ 	~Rotate(){} // Destructor
     
 private:
-    Rotate(){}
+    Rotate(){} // Default Constructor
 };
 
 #endif
