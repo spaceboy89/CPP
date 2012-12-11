@@ -121,7 +121,7 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 			if (is >> sz)
 			{
 				Repeat *p_rp = new Repeat(sz);
-				(*p_rp).SetBrackets();
+				(*p_rp).SetBrackets(false);
 				is >> *p_rp;
 				Instruction *i2 = p_rp;
 				pi.CommandList.push_back(i2);
@@ -146,10 +146,4 @@ ifstream& operator>>(ifstream& is, ParseInput& pi)
 
 	return is;
 }
-
-ostream& operator<<(ostream& os, const ParseInput& pi)
-{
-	return os;
-}
-
 

@@ -1,4 +1,4 @@
-# Makefile for C++ project 
+# Makefile for C++ Assignment (JAS,OD,CL) 
 # Working for Ubuntu 12.04 (06/12/12)
 
 CC=g++

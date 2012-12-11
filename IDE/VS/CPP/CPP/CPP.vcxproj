@@ -79,7 +79,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\source\Forward.cpp" />
-    <ClCompile Include="..\..\..\..\source\Instruction.cpp" />
     <ClCompile Include="..\..\..\..\source\Jump.cpp" />
     <ClCompile Include="..\..\..\..\source\ParseInput.cpp" />
     <ClCompile Include="..\..\..\..\source\Repeat.cpp" />

@@ -58,9 +58,6 @@
     <ClCompile Include="..\..\..\..\source\Forward.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\source\Instruction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\source\Jump.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -17,7 +17,6 @@ using namespace std;
 #include "Exceptions.h"
 
 ParseInput runProgram;
-int no_brackets; // Counter for the number of brackets in the program (for syntax checking)
 
 void draw(void)
 {

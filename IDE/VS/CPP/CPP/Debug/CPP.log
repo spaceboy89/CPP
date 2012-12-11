@@ -1,18 +1,9 @@
-﻿Build started 10/12/2012 18:50:58.
+﻿Build started 11/12/2012 10:04:51.
      1>Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Programs\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\source\Forward.cpp ..\..\..\..\source\Instruction.cpp ..\..\..\..\source\Jump.cpp ..\..\..\..\source\ParseInput.cpp ..\..\..\..\source\Repeat.cpp ..\..\..\..\source\Rotate.cpp ..\..\..\..\source\shape.cpp
-         shape.cpp
-     1>d:\gitrepos\cpp\source\shape.cpp(18): fatal error C1083: Cannot open include file: 'vld.h': No such file or directory
-         Rotate.cpp
-         Repeat.cpp
-         ParseInput.cpp
-         Jump.cpp
-         Instruction.cpp
-         Forward.cpp
-         Generating Code...
-     1>Done Building Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" (Build target(s)) -- FAILED.
+     1>Link:
+         CPP.vcxproj -> D:\GitRepos\CPP\IDE\VS\CPP\Debug\CPP.exe
+     1>Done Building Project "D:\GitRepos\CPP\IDE\VS\CPP\CPP\CPP.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:04.67
+Time Elapsed 00:00:00.06

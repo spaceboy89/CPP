@@ -20,7 +20,7 @@ public:
 	Repeat(double sz); // Constructor
 	~Repeat(){} // Destructor
 	friend ifstream& operator>>(ifstream& is, Repeat& r); // Input operator
-	void SetBrackets(); // Allows write access to brackets member variable
+	void SetBrackets(bool b){RepeatProgram.SetBrackets(b);} // Allows write access to brackets member variable
     
 private:
 	// Repeat class has a parse input class as a member variable
@@ -28,10 +28,5 @@ private:
     ParseInput RepeatProgram; 
 };
 
-// Recommendation to the compiler to inline the SetBrackets() function
-inline void Repeat::SetBrackets()
-{
-	RepeatProgram.SetBrackets(false);
-}
 
 #endif

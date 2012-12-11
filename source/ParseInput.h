@@ -28,8 +28,7 @@ public:
 	void Draw(); // Virtual Draw function
 	void SetBrackets(bool b){brackets = b;} // Allows write access to brackets member variable
 	friend ifstream& operator>>(ifstream& is, ParseInput& pi); // Reads the input program
-	friend ostream& operator<<(ostream& is, const ParseInput& pi); // Used for testing the input operator
-
+	
 private:
 	std::vector<Instruction *> CommandList; // Vector type allows dynamic growth of the command list
 	bool brackets; // Flag to indicate if enclosing brackets are balanced.
