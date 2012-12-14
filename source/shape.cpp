@@ -27,13 +27,13 @@ void draw(void)
 int main ( int argc, char *argv[] )   
 {
 	ifstream fs;
-	char i[100];
+	char i;
 
 	// Checks that an input file has been provided
 	if (argc != 2)
 	{
-		cerr << "Correct Usage: shape <filename>" << endl << "Press any key to exit...." << endl;
-		cin >> i;
+		cerr << "Correct Usage: shape <filename>" << endl << "Press return to exit...." << endl;
+		cin.get(i);
 		exit(1);
 	}
 
@@ -41,8 +41,8 @@ int main ( int argc, char *argv[] )
 	// Checks if the file opened successfully
 	if (!fs.is_open())
 	{
-		cerr << "File Not Found!" << endl << "Press any key to exit...." << endl;
-		cin >> i;
+		cerr << "File Not Found!" << endl << "Press return to exit...." << endl;
+		cin.get(i);
 		exit(1);
 	}
 
@@ -54,14 +54,23 @@ int main ( int argc, char *argv[] )
 	catch (FormatException& e)
 	{
 		cerr << e.what() << endl;
+		cerr << "Press return to exit...." << endl;
+		cin.get(i);
+		exit(1);
 	}
 	catch (BracketsError2& e)
 	{
 		cerr << e.what() << endl;
+		cerr << "Press return to exit...." << endl;
+		cin.get(i);
+		exit(1);
 	}
 	catch (BracketsError& e)
 	{
 		cerr << e.what() << endl ;
+		cerr << "Press return to exit...." << endl;
+		cin.get(i);
+		exit(1);
 	}
 	// Closes the input file
 	fs.close();

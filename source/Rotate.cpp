@@ -20,6 +20,9 @@
 #include <GL/glut.h> 
 #endif
 
+#include <cstdlib> 
+#include <ctime> 
+
 // Constructor
 Rotate::Rotate(double s)
 {
@@ -32,6 +35,11 @@ Rotate::Rotate(double s)
 // Only one is initialised with -size.
 void Rotate::Draw()
 {
+
+	
+
+	glColor3f(((double) rand() / (RAND_MAX)),((double) rand() / (RAND_MAX)),((double) rand() / (RAND_MAX)));
+
     // Rotate cursor by size degrees clockwise
     glRotatef(size, 0, 0, 1);
 	// End rotate

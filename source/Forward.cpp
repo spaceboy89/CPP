@@ -7,6 +7,10 @@
 //
 
 #include "Forward.h"
+
+#include <cstdlib> 
+#include <ctime> 
+
 #ifdef _WIN32
 #include<Windows.h>
 #include <GL/glut.h>   // The GL Utility Toolkit (Glut) Header
@@ -30,6 +34,10 @@ Forward::Forward(double s)
 
 void Forward::Draw()
 {
+	
+
+	glColor3f(((double) rand() / (RAND_MAX)),((double) rand() / (RAND_MAX)),((double) rand() / (RAND_MAX)));
+
     // Start drawing a line
     glBegin(GL_LINE_STRIP);
         glVertex3f(0, 0, 0);
